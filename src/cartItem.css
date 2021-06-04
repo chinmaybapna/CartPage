@@ -1,0 +1,49 @@
+.itemContainer {
+   width: 65%;
+   margin-right: 120px;
+}
+
+.stepper-input {
+    display: flex;
+    font-size: 10em;
+ }
+    
+ .btn {
+    cursor: pointer;
+    padding: 5px;
+    color: #fff;
+    background-color: #121212;
+    height: 25px;
+    width: 21px;
+    border: 1px solid #121212;
+ }
+ 
+ .btn-left  {
+    border-radius: 5px 0 0 5px;
+ }
+ 
+ .btn-right {
+    border-radius: 0 5px 5px 0;
+ }
+    
+ .input-box {
+    border: 1px solid #121212;
+    text-align: center;
+    width: 30px;
+    justify-content: center;
+ }
+
+ .firstRow {
+     display: inline-block;
+     text-align: left;
+ }
+
+ .content {
+     width: 75%;
+ }
+
+ .price {
+     width: 25%;
+     text-align: right;
+     margin-top: 5px;
+ }

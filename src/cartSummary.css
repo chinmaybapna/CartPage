@@ -1,0 +1,18 @@
+.summaryContainer {
+    width: 35%;
+    float: right;
+}
+
+.amountType {
+    width: 75%;
+}
+
+
+.amount {
+    width: 25%;
+    text-align: right;
+}
+
+.checkoutButton {
+    width: 100%;
+}
