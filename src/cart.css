@@ -8,10 +8,18 @@
     display: flex;
 }
 
+.cartItems {
+    width: 75%;
+}
+
 @media screen and (max-width: 1200px) {
     .responsive {
         margin-left: 20px;
         margin-right: 20px;
         display: block;
+    }
+    
+    .cartItems {
+        width: 100%;
     }
 }

@@ -9,7 +9,11 @@ export default function Cart() {
     return (
         <div className={"container"} style={{marginTop: 100}}>
             <div className={"responsive"}>
-                <CartItem />
+                <div className={"cartItems"} style={{display: "inline-block"}}>
+                    <h1>Cart</h1>
+                    <CartItem />
+                    {/* <CartItem /> */}
+                </div>
                 <CartSummary />
             </div>
         </div>

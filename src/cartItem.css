@@ -1,12 +1,21 @@
 .itemContainer {
    width: 65%;
    margin-right: 120px;
+   margin-top: 40px;
 }
 
 .stepper-input {
     display: flex;
     font-size: 10em;
  }
+
+ .size {
+    margin-top: 25px;
+ }
+
+ .qty {
+    margin-top: 25px;
+}
     
  .btn {
     cursor: pointer;
@@ -17,6 +26,11 @@
     width: 21px;
     border: 1px solid #121212;
  }
+
+ .productName {
+    font-size: 23px;
+    font-weight: bold;
+}
  
  .btn-left  {
     border-radius: 5px 0 0 5px;
@@ -46,10 +60,95 @@
      width: 25%;
      text-align: right;
      margin-top: 5px;
+     font-size: 20px;
  }
 
- @media screen and (max-width: 1200px) {
+ .price2 {
+     display: none;
+ }
+
+ .removeButton2 {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
     .itemContainer {
         width: 100%;
+    }
+}
+
+ @media screen and (max-width: 500px) {
+     .cartImage {
+         width: 90px;
+         height: 120px;
      }
+
+     .productName {
+         font-size: 18px;
+         font-weight: bold;
+     }
+
+     .price {
+        display: none;
+    }
+
+    .price2 {
+        font-size: 15px;
+        display: block;
+    }
+
+    #favButton {
+        display: none;
+    }
+
+    #removeButton {
+        display: none;
+    }
+
+    btn {
+        cursor: pointer;
+        padding: 5px;
+        color: #fff;
+        background-color: #121212;
+        height: 21px;
+        width: 15px;
+        border: 1px solid #121212;
+     }
+
+     .btn-left  {
+        border-radius: 5px 0 0 5px;
+     }
+     
+     .btn-right {
+        border-radius: 0 5px 5px 0;
+     }
+        
+     .input-box {
+        border: 1px solid #121212;
+        text-align: center;
+        width: 20px;
+        height: 21px;
+        justify-content: center;
+     }
+
+     .content {
+        width: 100%;
+    }
+
+    .size {
+        margin-top: 15px;
+    }
+
+    .qty {
+        margin-top: 15px;
+    }
+
+    .removeButton2 {
+        display: block;
+        margin-top: 25px;
+    }
+
+    Button {
+        width: 100%;
+    }
  }

@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
             background: 'transparent',
             textDecoration: 'underline',
         },
-    }
+    },
 }));
 
 export default function CartItem() {
@@ -43,13 +43,15 @@ export default function CartItem() {
 
     return (
         <div className={"itemContainer"}>
-            <h1>Cart</h1>
             <div style={{display: 'flex'}}>
                 <div className={"content"} style={{ display: "flex" }}>
                     <img src="/assets/cartImage.png" className={"cartImage"} width="150" height="200px" />
                     <div style={{ marginLeft: 25 }}>
-                        <div style={{ fontSize: 23 }}>Relaxing Scent</div>
-                        <div style={{ display: "flex", marginTop: 25 }}>
+                        <div className={"productName"}>Relaxing Scent</div>
+                        <div className={"price2"} style={{marginTop: 10}}>
+                            &#8377; 1299.00
+                        </div>
+                        <div className={"size"} style={{ display: "flex"}}>
                             <div style={{ marginTop: "auto", marginBottom: "auto", marginRight: 20, fontSize: 12 }}>SIZE -</div>
                             <FormControl className={classes.formControl}>
                                 <Select
@@ -68,22 +70,26 @@ export default function CartItem() {
                                 </Select>
                             </FormControl>
                         </div>
-                        <div style={{ display: "flex", marginTop: 25 }}>
-                            <div style={{ marginTop: "auto", marginBottom: "auto", marginRight: 20, fontSize: 12 }}>QUANTITY -</div>
+                        <div className={"qty"} style={{ display: "flex"}}>
+                            <div style={{ marginTop: "auto", marginBottom: "auto", marginRight: 20, fontSize: 12 }}>QTY -</div>
                             <div class="stepper-input">
                                 <button className={"btn btn-left"} onClick={decrement}>-</button>
                                 <input type="text" placeholder="Number of bugs" value={quantity} className={"input-box"} disabled/>
                                 <button className={"btn btn-right"} onClick={increment}>+</button>
                             </div>
                         </div>
-                        <Button className={classes.removeButton} style={{marginTop: 40, marginRight: 20, fontSize: 12}}>Move to favourites</Button>
-                        <Button className={classes.removeButton} style={{marginTop: 40, fontSize: 12}}>Remove</Button>
+                        <Button id="favButton" className={classes.removeButton} style={{marginTop: 40, marginRight: 20, fontSize: 12}}>Move to favourites</Button>
+                        <Button id="removeButton" className={classes.removeButton} style={{marginTop: 40, fontSize: 12}}>Remove</Button>
                     </div>
                 </div>
-                <div className={"price"} style={{fontSize: 17, fontWeight: 'bold'}}>
+                <div className={"price"}>
                     &#8377; 1299.00
                 </div>
             </div>
+            <div className={"removeButton2"}>
+                <Button variant="outlined">Remove</Button>
+            </div>
+            
             <hr style={{ marginTop: 25, size: 0.5 }}></hr>
         </div>
     );
