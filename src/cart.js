@@ -8,7 +8,7 @@ import './cart.css';
 export default function Cart() {
     return (
         <div className={"container"} style={{marginTop: 100}}>
-            <div style={{display: "flex"}}>
+            <div className={"responsive"}>
                 <CartItem />
                 <CartSummary />
             </div>

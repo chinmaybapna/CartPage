@@ -7,7 +7,6 @@
     width: 75%;
 }
 
-
 .amount {
     width: 25%;
     text-align: right;
@@ -15,4 +14,10 @@
 
 .checkoutButton {
     width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .summaryContainer {
+        width: 100%;
+    }
 }
